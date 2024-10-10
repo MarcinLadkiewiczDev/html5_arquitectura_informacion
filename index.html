@@ -15,14 +15,14 @@
 </head>
 <body>
     <header>
-        <h1 class="Guild-Wars-2">
-            <img src="./assets/images/Guild_wars_2_header_logo.png" alt="Guild Wars 2" title="Guild Wars 2">
+        <h1 class="h1">
+            <img src="./assets/images/Logos/Guild_wars_2_header_logo.png" alt="Guild Wars 2" title="Guild Wars 2">
             <a href="index.html">Guild Wars 2</a>
         </h1>
     <nav class="header-nav">
         <ul id="top-menu" class="nav-top-menu">
             <li class="nav-menu-item">
-                <a href="#">Razas</a>
+                <a href="#races">Razas</a>
                 <ul class="nav-sub-menu">
                     <li class="sub-menu-item">
                         <a href="#">Humano</a>
@@ -97,49 +97,57 @@
     </nav>
     </header>
     <main>
+        <article id="el-juego">
+            <h2>Guild Wars 2 - El Videojuego</h2>
+            <p>Guild Wars 2 es un juego de rol online con combates de acción trepidante, un universo rico y detallado e impresionantes paisajes que explorar y disfrutar.
+                Perfecto para jugar solo o con amigos.
+            </p>
+        </article>
         <section id="races" class="razas">
             <h2>Razas</h2>
-            <p>Podemos elegir entre 5 razas diferentes para nuestro personaje. Estas razas solo tendrán influencia en el aspecto físico del mismo y no en sus capacidades.</p>
-            <article class="item-razas">
-                <h3>Humano</h3>
-                <img src="#" alt="Imagen de un humano" title="Un personaje de la raza Humana">
-                <p></p>
+            <p>Podemos elegir entre 5 razas diferentes para nuestro personaje. Estas razas solo tendrán influencia en el aspecto físico y la historia personal del mismo y no en sus capacidades.</p>
+            <article class="item-razas" id="Human">
+                <h3><img src="./assets/images/Razas/Human_tango_icon_20px.png" alt="Icono de los humanos" id="icon-human">Humano</h3>
+                <img src="./assets/images/Razas/human.jpg" alt="Imagen de un humano" title="Un personaje de la raza Humana">
+                <p>Los humanos han perdido su hogar, seguridad y gloria. Hasta sus dioses los han abandonado. Aun así, su espiritu no está quebrado. Estos defensores de Kryta siguen luchando
+                    valientemente. 
+                </p>
                 <details class="details-razas">
                     <summary>Más Información</summary>
-                    <p></p>
+                    <p>Son habitantes de Kryta y su capital es Linde de la Divinidad.</p>
                 </details>
             </article>
-            <article class="item-razas">
-                <h3>Charr</h3>
-                <img src="#" alt="Imagen de un charr" title="Un personaje de la raza Charr">
-                <p></p>
+            <article class="item-razas" id="Charr">
+                <h3><img src="./assets/images/Razas/Charr_tango_icon_20px.png" alt="Icono de los charr" id="icon-charr">Charr</h3>
+                <img src="./assets/images/Razas/charr.jpg" alt="Imagen de un charr" title="Un personaje de la raza Charr">
+                <p>Los charr siempre han vivido en guerra. Es todo lo que saben hacer. Los necios y los débiles no tienen cabida en su raza. La victoria es todo lo que merece la pena y debe ser conseguida de cualquier manera a cualquier coste.</p>
                 <details class="details-razas">
                     <summary>Más Información</summary>
-                    <p></p>
+                    <p>Habitan en las llanuras de Ashford y su capital es Ciudadela Negra.</p>
             </article>
-            <article class="item-razas">
-                <h3>Norn</h3>
-                <img src="#" alt="Imagen de un norn" title="Un personaje de la raza Norn">
-                <p></p>
+            <article class="item-razas" id="Norn">
+                <h3><img src="./assets/images/Razas/Norn_tango_icon_20px.png" alt="Icono de los norn" id="icon-norn">Norn</h3>
+                <img src="./assets/images/Razas/norn.jpg" alt="Imagen de un norn" title="Un personaje de la raza Norn">
+                <p>Son grandes cazadores que han experimentado la derrota a manos del gran dragón helado. Desterrados a los glaciares. Ansian la venganza.</p>
                 <details class="details-razas">
                     <summary>Más Información</summary>
-                    <p></p>
+                    <p>Tras su derrota contra el gran dragón helado los norn habitan los picosescalofriantes. Su capital es Hoelbrak.</p>
             </article>
-            <article class="item-razas">
-                <h3>Sylvary</h3>
-                <img src="#" alt="Imagen de un sylvary" title="Un personaje de la raza Sylvary">
-                <p></p>
+            <article class="item-razas" id="Sylvary">
+                <h3><img src="./assets/images/Razas/Sylvari_tango_icon_20px.png" alt="Icono de los Sylvary" id="icon-sylvary">Sylvary</h3>
+                <img src="./assets/images/Razas/sylvari.jpg" alt="Imagen de un sylvary" title="Un personaje de la raza Sylvary">
+                <p>Los sylvary no nacen, renacen del Gran Árbol Pálido. Sus almas son nobles y siempres están en busca de aventura y descubrimiento. Les es dificil balancear la curiosidad con el deber.</p>
                 <details class="details-razas">
                     <summary>Más Información</summary>
-                    <p></p>
+                    <p>Los Sylvary habitan a las entradas de la selva de magumma y su capital es La Arboleda.</p>
             </article>
-            <article class="item-razas">
-                <h3>Asura</h3>
-                <img src="#" alt="Imagen de un asura" title="Un personaje de la raza Asura">
-                <p></p>
+            <article class="item-razas" id="Asura">
+                <h3><img src="./assets/images/Razas/Asura_tango_icon_20px.png" alt="Icono de los asura" id="icon-asura">Asura</h3>
+                <img src="./assets/images/Razas/asura.jpg" alt="Imagen de un asura" title="Un personaje de la raza Asura">
+                <p>Puede que sean pequeños en estatura pero son grandes ingenieros y gigantes intelectuales. Utilizan sus capacidades para crear todo tipo de artilugios útiles para su día a dia, sobretodo para la batalla. No sobrevive el más fuerte, solo el más inteligente.</p>
                 <details class="details-razas">
                     <summary>Más Información</summary>
-                    <p></p>
+                    <p>Habitan una sola ciudad Rata Sum, su capital. Está llena de artilugios tecnológicos como portales, escaleras flotantes y golems.</p>
             </article>
         </section>
         <section id="Profesions" class="item-profesiones">
