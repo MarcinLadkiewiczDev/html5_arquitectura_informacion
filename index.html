@@ -8,102 +8,58 @@
     <meta name="Keywords" content="MMORPG, videojuego, online, rol, multijugador , ordenador, Arenanet">
     <link rel="icon" href="./assets/images/guildwars2.logo.png">
 </head>
+<!--Se que las imagenes son muy grandes y la resolucion es baja lo que afecta al rendimiento pero sería mucho tiempo de editar imagenes para que mejore. Espero que almenos la estructura este bien-->
 <body>
     <header>
-        <h1 class="h1">
-            <img src="./assets/images/Logos/Guild_wars_2_header_logo.png" alt="Guild Wars 2" title="Guild Wars 2">
-            <a href="index.html">Guild Wars 2</a>
-        </h1>
+        <section class="web-title">
+        <img src="./assets/images/Logos/Guild_wars_2_header_logo.png" alt="Imagen del logo de Guild Wars 2">
+        <h1>Guild Wars 2</h1>
+    </section>
     <nav class="header-nav">
         <ul id="top-menu" class="nav-top-menu">
             <li class="nav-menu-item">
+                <a href="#el-juego">El Videojuego</a>
+            </li>
+            <li class="nav-menu-item">
                 <a href="#races">Razas</a>
-                <ul class="nav-sub-menu">
-                    <li class="sub-menu-item">
-                        <a href="#">Humano</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Charr</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Norn</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Sylvary</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Asura</a>
-                    </li>
-                </ul>
             </li>
             <li class="nav-menu-item">
-                <a href="#">Profesiones</a>
-                <ul class="nav-sub-menu">
-                    <li class="sub-menu-item">
-                        <a href="#">Guerrero</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Guardian</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Retornado</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Guardabosques</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Ladrón</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Ingeniero</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Nigromante</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Elementalista</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Hipnotizador</a>
-                    </li>
-                </ul>
+                <a href="#profesions">Profesiones</a>
             </li>
             <li class="nav-menu-item">
-                <a href="#">Expansiones</a>
-                <ul class="nav-sub-menu">
-                    <li class="sub-menu-item">
-                        <a href="#">Heart of Thornes</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Path of Fire</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">End of Dragons</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Secrets of the Obscure</a>
-                    </li>
-                    <li class="sub-menu-item">
-                        <a href="#">Janthir Wilds</a>
-                    </li>
-                </ul>
+                <a href="#expansions">Expansiones</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#formulario">Contacto</a>
             </li>
         </ul>
     </nav>
     </header>
     <main>
+        <section id="slider" class="slider">
+            <ul class="slides" id="slides">
+                <li id="slide1" class="slide">
+                    <img src="./assets/images/Slider/Mainbannerguildwars2.webp" alt="Banner de Guild Wars 2 el Videojuego">
+                    <h2>Guild Wars 2 - El videojuego</h2>
+                </li>
+                <li id="slide2" class="slide">
+                    <img src="./assets/images/Slider/Bannerraces.jpg" alt="Imagen de las Razas del videojuego">
+                    <h2>Razas Jugables</h2>
+                </li>
+            </ul>
+        </section>
         <article id="el-juego">
-            <h2>Guild Wars 2 - El Videojuego</h2>
+            <h2>Acerca de Guild Wars 2</h2>
             <p>Guild Wars 2 es un juego de rol online con combates de acción trepidante, un universo rico y detallado e impresionantes paisajes que explorar y disfrutar.
                 Perfecto para jugar solo o con amigos.
             </p>
         </article>
-        <section id="races" class="razas">
+        <section id="races" class="box-section">
             <h2>Razas</h2>
             <p>Podemos elegir entre 5 razas diferentes para nuestro personaje. Estas razas solo tendrán influencia en el aspecto físico y la historia personal del mismo y no en sus capacidades.</p>
             <article class="item-razas" id="Human">
                 <h3>Humano</h3>
-                <img src="./assets/images/Razas/Human_tango_icon_20px.png" alt="Icono de los humanos" id="icon-human">
+                <img src="./assets/images/Razas/Human_tango_icon_20px.png" alt="Icono de los humanos" class="icon-race">
                 <img src="./assets/images/Razas/human.jpg" alt="Imagen de un humano" title="Un personaje de la raza Humana">
                 <p>Los humanos han perdido su hogar, seguridad y gloria. Hasta sus dioses los han abandonado. Aun así, su espiritu no está quebrado. Estos defensores de Kryta siguen luchando
                     valientemente. 
@@ -114,7 +70,8 @@
                 </details>
             </article>
             <article class="item-razas" id="Charr">
-                <h3><img src="./assets/images/Razas/Charr_tango_icon_20px.png" alt="Icono de los charr" id="icon-charr">Charr</h3>
+                <h3>Charr</h3>
+                <img src="./assets/images/Razas/Charr_tango_icon_20px.png" alt="Icono de los charr" class="icon-race">
                 <img src="./assets/images/Razas/charr.jpg" alt="Imagen de un charr" title="Un personaje de la raza Charr">
                 <p>Los charr siempre han vivido en guerra. Es todo lo que saben hacer. Los necios y los débiles no tienen cabida en su raza. La victoria es todo lo que merece la pena y debe ser conseguida de cualquier manera a cualquier coste.</p>
                 <details class="details-razas">
@@ -123,7 +80,8 @@
                 </details>
             </article>
             <article class="item-razas" id="Norn">
-                <h3><img src="./assets/images/Razas/Norn_tango_icon_20px.png" alt="Icono de los norn" id="icon-norn">Norn</h3>
+                <h3>Norn</h3>
+                <img src="./assets/images/Razas/Norn_tango_icon_20px.png" alt="Icono de los norn" class="icon-race">
                 <img src="./assets/images/Razas/norn.jpg" alt="Imagen de un norn" title="Un personaje de la raza Norn">
                 <p>Son grandes cazadores que han experimentado la derrota a manos del gran dragón helado. Desterrados a los glaciares. Ansian la venganza.</p>
                 <details class="details-razas">
@@ -132,7 +90,8 @@
                     </details>
             </article>
             <article class="item-razas" id="Sylvary">
-                <h3><img src="./assets/images/Razas/Sylvari_tango_icon_20px.png" alt="Icono de los Sylvary" id="icon-sylvary">Sylvary</h3>
+                <h3>Sylvary</h3>
+                <img src="./assets/images/Razas/Sylvari_tango_icon_20px.png" alt="Icono de los Sylvary" class="icon-race">
                 <img src="./assets/images/Razas/sylvari.jpg" alt="Imagen de un sylvary" title="Un personaje de la raza Sylvary">
                 <p>Los sylvary no nacen, renacen del Gran Árbol Pálido. Sus almas son nobles y siempres están en busca de aventura y descubrimiento. Les es dificil balancear la curiosidad con el deber.</p>
                 <details class="details-razas">
@@ -141,7 +100,8 @@
                     </details>
             </article>
             <article class="item-razas" id="Asura">
-                <h3><img src="./assets/images/Razas/Asura_tango_icon_20px.png" alt="Icono de los asura" id="icon-asura">Asura</h3>
+                <h3>Asura</h3>
+                <img src="./assets/images/Razas/Asura_tango_icon_20px.png" alt="Icono de los asura" class="icon-race">
                 <img src="./assets/images/Razas/asura.jpg" alt="Imagen de un asura" title="Un personaje de la raza Asura">
                 <p>Puede que sean pequeños en estatura pero son grandes ingenieros y gigantes intelectuales. Utilizan sus capacidades para crear todo tipo de artilugios útiles para su día a dia, sobretodo para la batalla. No sobrevive el más fuerte, solo el más inteligente.</p>
                 <details class="details-razas">
@@ -150,23 +110,289 @@
                     </details>
             </article>
         </section>
-        <section id="Profesions">
+        <section id="Profesions" class="box-section">
             <h2>Profesiones</h2>
             <p>Las profesiones equivalen al rol que va a asumir nuestro personaje y no dependen de la raza.
-                Podemos tener un Norn que sea Guerrero y un Asura que sea Guerrero, lo único que cambiará será el aspecto físico.
+                Podemos tener un Norn que sea Guerrero y un Asura que sea Guerrero, lo único que cambiará será el aspecto físico del mismo.
             </p>
             <article class="Profesiones">
-                    <h3><img src="./assets/images/profesiones/icono profesiones/Warrior_icon_small.png" alt="Icono de Guerrero">Guerrero</h3>
+                <h3>Guerrero</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Warrior_icon_small.png" alt="Icono de Guerrero" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/guerrero.jpeg" alt="Imagen de un Guerrero" class="profesion">
                 <p></p>
+                <p>Con la salida de las expansiones, los guerreros adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Berserker_icon_small.png" alt="Icono Berserker" class="icon-spec">
+                            <p>Berserker:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Spellbreaker_icon_small.png" alt="Icono Rompehechizos" class="icon-spec">
+                            <p>Rompehechizos:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Bladesworn_icon_small.png" alt="Icono Jurafilo" class="icon-spec">
+                            <p>Jurafilo:</p>
+                        </li>
+                    </ul>
+                </details>
             </article>
-
-
-
-
+            <article class="Profesiones">
+                <h3>Guardian</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Guardian_icon_small.png" alt="Icono de Guardian" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/guardian.jpeg" alt="Imagen de un Guardian" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los guardianes adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Dragonhunter_icon_small.png" alt="Icono Cazadragones" class="icon-spec">
+                            <p>Cazadragones:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Firebrand_icon_small.png" alt="Icono Abrasador" class="icon-spec">
+                            <p>Abrasador:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Willbender_icon_small.png" alt="Icono Subyugador" class="icon-spec">
+                            <p>Subyugador:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="Profesiones">
+                <h3>Retornado</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Revenant_icon_small.png" alt="Icono de Retornado" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/retornado.jpeg" alt="Imagen de un Retornado" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los Retornados adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Herald_icon_small.png" alt="Icono Heraldo" class="icon-spec">
+                            <p>Heraldo:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Renegade_icon_small.png" alt="Icono Renegado" class="icon-spec">
+                            <p>Renegado:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Vindicator_icon_small.png" alt="Icono justiciero" class="icon-spec">
+                            <p>Justiciero:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="Profesiones">
+                <h3>Guardabosques</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Ranger_icon_small.png" alt="Icono de Guardabosques" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/guardabosques.jpeg" alt="Imagen de un Guardabosques" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los Guardabosques adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Druid_icon_small.png" alt="Icono Druida" class="icon-spec">
+                            <p>Druida:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Soulbeast_icon_small.png" alt="Icono Bestiaalma" class="icon-spec">
+                            <p>Bestiaalma:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Untamed_icon_small.png" alt="Icono Indomable" class="icon-spec">
+                            <p>Indomable:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="Profesiones">
+                <h3>Ingeniero</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Engineer_icon_small.png" alt="Icono de Ingeniero" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/ingeniero.jpeg" alt="Imagen de un ingeniero" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los Ingenieros adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Scrapper_icon_small.png" alt="Icono Chatarrero" class="icon-spec">
+                            <p>Chatarrero:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Holosmith_icon_small.png" alt="Icono Holoartesano" class="icon-spec">
+                            <p>Holoartesano:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Mechanist_icon_small.png" alt="Icono Mecanista" class="icon-spec">
+                            <p>Mecanista:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="Profesiones">
+                <h3>Ladrón</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Thief_icon_small.png" alt="Icono de Ladrón" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/ladrón.jpeg" alt="Imagen de un Ladrón" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los ladrones adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Daredevil_icon_small.png" alt="Icono Temerario" class="icon-spec">
+                            <p>Temerario:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Deadeye_icon_small.png" alt="Icono Certero" class="icon-spec">
+                            <p>Certero:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Specter_icon_small.png" alt="Icono Espectro" class="icon-spec">
+                            <p>Espectro:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="Profesiones">
+                <h3>Elementalista</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Elementalist_icon_small.png" alt="Icono de Elementalista" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/elementalista.jpeg" alt="Imagen de un Elementalista" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los elementalistas adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Tempest_icon_small.png" alt="Icono Tempestad" class="icon-spec">
+                            <p>Tempestad:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Weaver_icon_small.png" alt="Icono Tejedor" class="icon-spec">
+                            <p>Tejedor:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Catalyst_icon_small.png" alt="Icono Catalizador" class="icon-spec">
+                            <p>Catalizador:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="Profesiones">
+                <h3>Nigromante</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Necromancer_icon_small.png" alt="Icono de Nigromante" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/nigromante.jpeg" alt="Imagen de un Nigromante" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los nigromantes adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Reaper_icon_small.png" alt="Icono Segador" class="icon-spec">
+                            <p>Segador:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Scourge_icon_small.png" alt="Icono Azotador" class="icon-spec">
+                            <p>Azotador:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Harbinger_icon_small.png" alt="Icono Augurador" class="icon-spec">
+                            <p>Augurador:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="Profesiones">
+                <h3>Hipnotizador</h3>
+                <img src="./assets/images/profesiones/icono_profesiones/Mesmer_icon_small.png" alt="Icono de hipnotizador" class="icon-class">
+                <img src="./assets/images/profesiones/imagen_profesion/hipnotizador.jpeg" alt="Imagen de un hipnotizador" class="profesion">
+                <p></p>
+                <p>Con la salida de las expansiones, los hipnotizadores adquieren nuevas especializaciones.</p>
+                <details>
+                    <summary>Especializaciones</summary>
+                    <ul>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Chronomancer_icon_small.png" alt="Icono Cronometrador" class="icon-spec">
+                            <p>Cronometrador:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Mirage_icon_small.png" alt="Icono Quimerico" class="icon-spec">
+                            <p>Quimerico:</p>
+                        </li>
+                        <li class="specs">
+                            <img src="./assets/images/profesiones/icono_especializaciones/Virtuoso_icon_small.png" alt="Icono virtuoso" class="icon-spec">
+                            <p>Virtuoso:</p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+        </section>
+        <section id="expansions" class="expansions">
+            <h2>Expansiones</h2>
+            <p>El juego tiene 5 expansiones. Cada expansion añade historia diferente no vinculante con las anteriores. Puedes jugar el juego base y saltar directamente a la 5º expansión.</p>
+            <article class="item-expansion" id="heartofthornes">
+                <h3>Heart of Thornes</h3>
+                <img src="./assets/images/Expansiones/guild-wars-2-heart-of-thorns-dlc-pc-cd-key-1.jpg" alt="Imagen de la expansion heart of thornes" class="expansion-image">
+                <p>Heart of Thornes es la primera expansión de juego. Está ambientada en la región de Magumma. Una región llena de vida, con bosques y mucha vegetación. La historia principal de esta expansión es derrotar al dragón anciano Mordremoth. En esta expansión se introduce el planeador y los dominios.</p>
+            </article>
+            <article class="item-expansion" id="pathoffire">
+                <h3>Path of Fire</h3>
+                <img src="./assets/images/Expansiones/guild-wars-2-path-of-fire-pc-juego-ncsoft-cover.jpg" alt="Imagen de la expansion path of fire" class="expansion-image">
+                <p>Path of Fire es la segunda expansión del juego. Ambientada en la region de Elona. Una región desertica donde predominan las criaturas como los escorpiones, tiburones del desierto y djinn. En esta expansión obtenemos por primera vez las monturas. Estas nos servirán para desplazarnos por el mundo y a su vez, tienen habilidades únicas. El cometido principal de esta expansión es derrotar al Dios de la guerra Balthasar.</p>
+            </article>
+            <article class="item-expansion" id="endofdragons">
+                <h3>End of Dragons</h3>
+                <img src="./assets/images/Expansiones/guild-wars-2-end-of-dragons-pc-juego-ncsoft-cover.jpg" alt="Imagen de la expansion end of dragons" class="expansion-image">
+                <p>End of Dragons es la tercera expansión, ambientada en el continente de Cantha. Es una región ambientada en asia y su cultura. Hay un salto temporal hacia el futuro donde encontramos una civilización avanzada en tecnología que tiene que lidiar con una gran amenaza. En esta expansión se incorpora la pesca. Podremos pescar por todo el continente para conseguir infinidad de especies de peces diferentes. Derrotar al dragón anciano Soo-Won será nuestro cometido en esta expansión.</p>
+            </article>
+            <article class="item-expansion" id="soto">
+                <h3>Secrets of the Obscure</h3>
+                <img src="./assets/images/Expansiones/guild-wars-2-secrets-of-the-obscure-pc-juego-ncsoft-cover.jpg" alt="Imagen de la expansion secrets of the obscure" class="expansion-image">
+                <p>Secrets of the Obscure deja de lado la tematica de los dragones y se embarca en el mundo de los demonios. Atravesaremos un portal que nos llevará al mundo de los Kryptis. Está ambientado en el inframundo, un lugar lugubre donde solo encontraremos demonios. Nuestro cometido será acabar con el rey de los Demonios.</p>
+            </article>
+            <article class="item-expansion" id="janthirwilds">
+                <h3>Janthir Wilds</h3>
+                <img src="./assets/images/Expansiones/guild-wars-2-janthir-wilds-pc-juego-ncsoft-cover.jpg" alt="Imagen de la expansion janthir wilds" class="expansion-image">
+                <p>Janthir Wilds nos teletransporta al universo de los Kodan, una raza de Osos luchadores. Su ambientación es similar a la de Magumma pero con más niveles de profundidad en el mapa. Descubriremos que la amenaza de esta expansión son los titanes y tendremos que darles caza. Como elemento diferencial de esta expansión obtenemos el housing, una casa propia para nuestra cuenta que podemos decorar y poner a nuestro gusto.</p>
+            </article>
+        </section>
+        <section id="formulario" class="form">
+            <h3>Formulario de contacto</h3>
+            <form action="Formulario.de.contacto" method="POST">
+                <label for="Name">Nombre Completo:</label>
+                <input type="text" name="Nombre Completo" id="Name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" name="Email" id="email" required>
+                <label for="Asunto">Asunto:</label>
+                <input type="text" name="Asunto" id="Asunto" required>
+                <textarea name="mensaje" rows="5" cols="50" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
     <footer>
+        <address id="contacto" class="contact">
+            <p>Marcin Ladkiewicz</p>
+            <p>marcin.ladkiewicz@gmail.com </p>
+            <p>Ingame nick:Taki Vizu</p>
+        </address>
         <p>© 2024 Guild Wars 2. Todos los derechos reservados. Desarrollado por <a href="https://github.com/MarcinLadkiewiczDev">MarcinLadKiewiczDev</a></p>
+        <ul id="socials" class="redes-sociales">
+            <li id="instagram" class="social">
+                <a href="https://www.instagram.com/guildwars2/?hl=es"><img src="./assets/images/footer/instagram.jpg" alt="Logo Instagram" class="social-logo"></a>
+            </li>
+            <li id="Twitter" class="social">
+                <a href="https://x.com/GuildWars2?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./assets/images/footer/twitter_logo.png" alt="Logo Twitter" class="social-logo"></a>
+            </li>
+            <li id="facebook" class="social">
+                <a href="https://www.facebook.com/GuildWars2/?locale=es_ES"><img src="./assets/images/footer/facebook_logo.png" alt="Logo facebook" class="social-logo"></a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>
